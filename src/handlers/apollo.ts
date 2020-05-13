@@ -1,4 +1,5 @@
-import { ApolloServer, graphqlCloudflare } from 'apollo-server-cloudflare'
+import { ApolloServer } from 'apollo-server-cloudflare'
+import { graphqlCloudflare } from 'apollo-server-cloudflare/dist/cloudflareApollo'
 
 import KVCache from '../cache'
 import PokemonAPI from '../datasources/pokeapi'
