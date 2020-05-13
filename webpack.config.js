@@ -13,11 +13,10 @@ module.exports = {
   mode,
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
-    plugins: [],
     alias: {
       // hack to get apollo to compile
-      fs: path.resolve(__dirname, './src/utils/empty.js'),
-      busboy: path.resolve(__dirname, './src/utils/empty.js'),
+      fs: path.resolve(__dirname, './src/utils/empty.ts'),
+      busboy: path.resolve(__dirname, './src/utils/empty.ts'),
     },
   },
   module: {
