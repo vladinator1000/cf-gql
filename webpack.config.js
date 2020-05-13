@@ -14,6 +14,11 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     plugins: [],
+    alias: {
+      // hack to get apollo to compile
+      fs: path.resolve(__dirname, './src/utils/empty.js'),
+      busboy: path.resolve(__dirname, './src/utils/empty.js'),
+    },
   },
   module: {
     rules: [
@@ -32,13 +37,6 @@ module.exports = {
       },
       // { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
     ],
-  },
-  resolve: {
-    alias: {
-      // hack to get apollo to compile
-      fs: path.resolve(__dirname, './src/utils/empty.js'),
-      busboy: path.resolve(__dirname, './src/utils/empty.js'),
-    },
   },
   optimization: {
     usedExports: true,
