@@ -1,0 +1,8 @@
+name = "ts-cloudflare"
+type = "webpack"
+webpack_config = "webpack.config.js"
+account_id = "4b53615f0f1c00b8a6c8b3d694848674"
+# entry-point = "./src/index.ts"
+workers_dev = true
+route = ""
+zone_id = ""
