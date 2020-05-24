@@ -4,12 +4,8 @@
     "module": "ESNext",
     "target": "ESNext",
     "lib": ["ESNext", "WebWorker"],
-    "alwaysStrict": true,
     "strict": true,
-    "preserveConstEnums": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "esModuleInterop": true
+    "preserveConstEnums": true
   },
   "include": [
     "./src/*.ts",
