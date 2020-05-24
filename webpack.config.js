@@ -1,6 +1,5 @@
 const path = require('path')
-
-const mode = process.env.NODE_ENV || 'production'
+// const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = {
   entry: './src/index.ts',
@@ -10,7 +9,7 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
   },
   devtool: 'source-map',
-  mode,
+  mode: 'production',
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
     alias: {
@@ -35,4 +34,7 @@ module.exports = {
   optimization: {
     usedExports: true,
   },
+  plugins: [
+    // new BundleAnalyzerPlugin()
+  ]
 }
